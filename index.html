@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Spark Scooters</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Inicio del encabezado -->
+    <header>
+        <!-- Navegación principal -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo del sitio -->
+                <div class="logo d-flex align-items-center">
+                    <img src="multimedia/logo.png" alt="Logo de E-Spark Scooters" class="logo-img">
+                    <h1 class="logo-text">E-Spark Scooters</h1>
+                </div>
+                <!-- Botón de menú para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/about.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/testimonials.html">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sección hero con llamada a la acción -->
+        <div class="hero text-center text-white">
+            <h2>Transporte urbano divertido y ecológico</h2>
+            <p>Descubre el futuro de la movilidad con nuestros modernos monopatines eléctricos.</p>
+            <a href="pages/services.html" class="btn btn-primary">Explora Nuestros Servicios</a>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="multimedia/Espark.jpg" class="d-block w-100" alt="E-Spark Cruiser">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>E-Spark Cruiser</h5>
+                    <p>El E-Spark Cruiser ofrece un viaje suave y duradero con características como batería de larga duración, GPS y velocidades ajustables.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="multimedia/573953.webp" class="d-block w-100" alt="E-Spark Sport">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>E-Spark Sport</h5>
+                    <p>El E-Spark Sport tiene los mismos beneficios que nuestro Cruiser pero para los amantes de la velocidad de una moto deportiva.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="multimedia/Contami.jpg" class="d-block w-100" alt="Beneficios">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beneficios</h5>
+                    <p>Reduces la contaminación y el tráfico con monopatines eléctricos. Disfruta de un paseo ágil y emocionante por la ciudad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="multimedia/BOLT.webp" class="d-block w-100" alt="App de E-Spark">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>App de E-Spark</h5>
+                    <p>Nuestra app facilita el alquiler y/o ofrecimiento de monopatines, para que te desplaces por la ciudad de manera rápida y conveniente.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de introducción -->
+        <section id="intro" class="text-center">
+            <div class="container">
+                <h2>Introducción</h2>
+                <p>Bienvenido a E-Spark Scooters, donde hacemos el transporte urbano más divertido y ecológico con nuestros modernos monopatines eléctricos.</p>
+            </div>
+        </section>
+
+        <!-- Sección de testimonios -->
+        <section id="testimonial" class="text-center">
+            <div class="container">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonial">
+                    <p>"¡Los monopatines de E-Spark han cambiado la forma en que me muevo por la ciudad! ¡Son rápidos, ecológicos y muy divertidos!"</p>
+                    <span>- Ana</span>
+                </div>
+                <div class="testimonial">
+                    <p>"La app es increíblemente fácil de usar y el servicio es excelente. ¡Definitivamente recomendaría E-Spark!"</p>
+                    <span>- Luis</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 E-Spark Scooters. Todos los derechos reservados.</p>
+            <div class="redes">
+                <p class="tituloRedes">Síguenos en nuestras redes sociales</p>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white me-2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
