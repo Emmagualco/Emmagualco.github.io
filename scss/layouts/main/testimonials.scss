@@ -1,0 +1,25 @@
+/* Estilo para la página Testimonios */
+#testimonials {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: right;
+    font-weight: bold;
+}

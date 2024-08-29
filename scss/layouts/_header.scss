@@ -1,0 +1,34 @@
+/* Estilos para el encabezado */
+header {
+    background: #000;
+    color: #fff;
+    padding: 0;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+    color: #f1c40f !important;
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #f1c40f;
+}
+

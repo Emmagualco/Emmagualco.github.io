@@ -1,0 +1,23 @@
+/* Estilos del pie de página */
+footer {
+    background: rgb(23, 23, 24);
+    color: rgb(188, 148, 28);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .redes a {
+    color: rgba(171, 171, 169, 0.641);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.tituloRedes {
+    color: rgba(171, 171, 169, 0.641);
+}
+
+footer p {
+    font-size: 17px;
+    text-align: center;
+    font-family: fantasy;
+}

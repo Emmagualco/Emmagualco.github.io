@@ -1,0 +1,197 @@
+/* Estilos generales del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('Multimedia/360_F_124760316_HWHuMfW85Ov0wqQ1iXu3ztKCTryKC30J.jpg') no-repeat center center/cover;
+    background-color: #e8f5e9;
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #000;
+    color: #fff;
+    padding: 0;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+    color: #f1c40f !important;
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #f1c40f;
+}
+
+/* Estilos del navbar en dispositivos móviles */
+.navbar-toggler {
+    border-color: #f1c40f; /* Color del borde del botón de menú */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="%23f1c40f" stroke-width="2" d="M5 6h20M5 14h20M5 22h20"/%3e%3c/svg%3e');
+}
+
+/* Sección hero */
+.hero {
+    background: url('Multimedia/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f1c40f;
+    color: #000;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e1b32c;
+}
+
+/* Estilos del carrusel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo para la página Nosotros */
+#about {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la página Servicios */
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: rgb(23, 23, 24);
+    color: rgb(188, 148, 28);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .redes a {
+    color: rgba(171, 171, 169, 0.641);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.tituloRedes {
+    color: rgba(171, 171, 169, 0.641);
+}
+
+footer p {
+    font-size: 17px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+/* Estilos del formulario de contacto */
+#contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f1c40f;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background: #e1b32c;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    /* Ajustes específicos para el navbar en pantallas pequeñas */
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
