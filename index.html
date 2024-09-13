@@ -4,11 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Spark Scooters</title>
+    <title>E-Spark Scooters | Monopatines Eléctricos</title>
+
+    <!-- Meta Descriptions para SEO -->
+    <meta name="description" content="E-Spark Scooters ofrece monopatines eléctricos para transporte urbano, proporcionando una opción ecológica y divertida para moverse por la ciudad. Descubre nuestros servicios y productos.">
+    <meta name="keywords" content="monopatines eléctricos, transporte ecológico, movilidad urbana, E-Spark Scooters, alquiler de scooters">
+    <meta name="author" content="E-Spark Scooters">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="E-Spark Scooters | Monopatines Eléctricos">
+    <meta property="og:description" content="Explora el futuro del transporte urbano con E-Spark Scooters. Alquiler de monopatines eléctricos rápidos y ecológicos.">
+    <meta property="og:image" content="https://www.ejemplo.com/multimedia/logo.png">
+    <meta property="og:url" content="https://www.ejemplo.com">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -35,7 +53,18 @@
                         <li class="nav-item"><a class="nav-link" href="pages/about.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/testimonials.html">Testimonios</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contáctanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/shop.html">Tienda</a></li>
+                
                     </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="badge bg-danger">0</span> <!-- Cambia 0 por el número real de ítems en el carrito -->
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
         </nav>
@@ -120,25 +149,62 @@
                 </div>
             </div>
         </section>
+
+        <!-- Sección de e-commerce -->
+        <section id="shop" class="text-center">
+            <div class="container">
+                <h2>Nuestra Tienda</h2>
+                <div class="row">
+                    <!-- Aquí van los productos -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="multimedia/Espark.jpg" alt="E-Spark Cruiser">
+                            <h3>E-Spark Cruiser</h3>
+                            <p>$599.00</p>
+                            <a href="pages/product.html?id=1" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="multimedia/573953.webp" alt="E-Spark Sport">
+                            <h3>E-Spark Sport</h3>
+                            <p>$699.00</p>
+                            <a href="pages/product.html?id=2" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="multimedia/BOLT.webp" alt="Accesorios">
+                            <h3>Accesorios</h3>
+                            <p>Desde $49.00</p>
+                            <a href="pages/product.html?id=3" class="btn btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer>
         <div class="container">
-            <p>&copy; 2024 E-Spark Scooters. Todos los derechos reservados.</p>
             <div class="redes">
-                <p class="tituloRedes">Síguenos en nuestras redes sociales</p>
-                <a href="https://www.instagram.com/" target="_blank" class="text-white me-2"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
+            <p class="tituloRedes">Síguenos en nuestras redes sociales</p>
+            <p>&copy; 2024 E-Spark Scooters. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+    <!-- Scripts de Bootstrap y otros necesarios -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9fzp+ysGofZs2yWkc2lC6fp2e8V6sTQ+K9X6s6fZUhDhG0keJ2J" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniVjOC50tB9bAt5MD0zU28yH76pxWu6X8mT4gxMj8Tk5i9Y7Jf2b1" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+

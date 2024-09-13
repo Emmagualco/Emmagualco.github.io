@@ -1,10 +1,45 @@
 /* Media Queries */
+
+/* Para pantallas de 768px o menos */
 @media (max-width: 768px) {
+
+    /* Ajusta el diseño de la rejilla a una sola columna */
     .container-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Ajusta el tamaño del logo en pantallas más pequeñas */
     .logo img {
-        height: 40px;
+        height: 40px; /* Asegúrate de que el logo siga siendo visible y legible */
+    }
+
+    /* Asegúrate de que el texto y otros elementos también se ajusten */
+    .logo-text {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto del logo si es necesario */
+    }
+
+    /* Ajusta el tamaño del texto en botones y enlaces si es necesario */
+    button, .nav-link {
+        font-size: 0.875rem; /* Reduce el tamaño del texto para que se ajuste mejor */
+    }
+
+    /* Ajusta el espacio alrededor de los elementos */
+    .container {
+        padding: 1rem; /* Asegúrate de que haya suficiente espacio en los bordes */
+    }
+
+    /* Ajusta el diseño del formulario en pantallas pequeñas */
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        input, textarea {
+            width: 100%; /* Asegúrate de que los campos del formulario ocupen todo el ancho disponible */
+            margin-bottom: 1rem; /* Espaciado entre campos */
+        }
+        
+        button {
+            align-self: flex-start; /* Alinea el botón en el inicio del formulario */
+        }
     }
 }

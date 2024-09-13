@@ -1,31 +1,39 @@
-/* Estilos generales del documento */
+/// Importación de variables
+@import 'variables';
+
+// Estilos generales del documento
 body {
-    font-family: Arial, sans-serif;
+    font-family: $font-family;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: url('../multimedia/360_F_124760316_HWHuMfW85Ov0wqQ1iXu3ztKCTryKC30J.jpg') no-repeat center center/cover;
-    background-color: #e8f5e9;
+    background-color: $background-color;
 }
 
-/* Estilos globales */
+// Estilos globales
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Estilos para botones */
-button {
+// Mixin para botones
+@mixin button-style($bg-color, $text-color: #000, $border-radius: 5px) {
     padding: 10px 20px;
-    background: #f1c40f;
-    color: #000;
+    background: $bg-color;
+    color: $text-color;
     border: none;
-    border-radius: 5px;
+    border-radius: $border-radius;
     cursor: pointer;
     transition: background 0.3s;
+    
+    &:hover {
+        background: darken($bg-color, 10%);
+    }
 }
 
-button:hover {
-    background: #e1b32c;
+// Estilos para botones
+button {
+    @include button-style($button-bg-color);
 }

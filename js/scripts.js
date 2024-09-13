@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Obtener el botón de alternancia del menú y el contenedor de enlaces
+    // Obtener el botón de alternancia del menú
     const menuToggle = document.querySelector('.navbar-toggler');
-    const navLinks = document.querySelector('.navbar-collapse');
 
-    // Asegurarse de que los elementos existen
-    if (menuToggle && navLinks) {
+    // Asegurarse de que el elemento existe
+    if (menuToggle) {
         menuToggle.addEventListener('click', () => {
-            // Alternar la clase 'show' para mostrar u ocultar el menú en pantallas móviles
-            navLinks.classList.toggle('show');
+            // Alternar la visibilidad del menú en pantallas móviles usando Bootstrap
+            const navLinks = document.querySelector('#collapsibleNavbar');
+            if (navLinks) {
+                navLinks.classList.toggle('show');
+            }
         });
     }
 });
+
 

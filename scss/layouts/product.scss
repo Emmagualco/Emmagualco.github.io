@@ -1,0 +1,21 @@
+#product {
+    padding: 60px 0;
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .btn-primary {
+        background-color: #f1c40f;
+        border: none;
+        &:hover {
+            background-color: #e0b80f;
+        }
+    }
+}

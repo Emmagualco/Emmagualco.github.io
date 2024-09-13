@@ -1,0 +1,46 @@
+// styles.scss
+
+// Importación de los archivos de utilidades
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Importación de los archivos de base y diseño general
+@import 'layouts/base';
+@import 'layouts/_header';
+@import 'layouts/_footer';
+
+// Importación de estilos específicos de cada página
+@import 'layouts/main/about';
+@import 'layouts/main/contact';
+@import 'layouts/main/services';
+@import 'layouts/main/testimonials';
+@import 'layouts/main/coming-soon'; // Agregado aquí
+
+// Importación de medios y otros estilos específicos
+@import 'layouts/medias';
+
+// SCSS para el ícono del carrito
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link i.bi-cart {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-item .nav-link #cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #f1c40f;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+// Asegúrate de que el ícono de carrito esté bien integrado
+@import "~bootstrap-icons/font/bootstrap-icons.css";

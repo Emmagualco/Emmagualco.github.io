@@ -1,0 +1,23 @@
+// utils/mixins.scss
+
+// Mixin para centrar un elemento
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin para el botón
+  @mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    padding: $padding-base;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
